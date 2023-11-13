@@ -1,0 +1,26 @@
+{
+  "name": "npm-workspace-example",
+  "version": "0.1.1",
+  "private": true,
+  "workspaces": [
+    "projects/common",
+    "projects/core"
+  ],
+  "engines": {
+    "node": "18"
+  },
+  "scripts": {
+    "build": "tsc --build --verbose",
+    "clean": "find . \\( -name \"dist\" -o -name \"node_modules\" -o -name \"packages\" -o -name \"lib\" -o -name \"common*.tgz\" \\) -prune -print -exec rm -rf '{}' +"
+  },
+  "main": "lib/src/index.js",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "typescript": "^4.5.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://https://github.com/if-fi/npm-workspaces-example.git"
+  }
+}

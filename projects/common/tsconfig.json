@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "module": "CommonJS",
+    "moduleResolution": "node",
+    "noImplicitReturns": true,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "resolveJsonModule": true,
+    "outDir": "lib",
+    "strict": true,
+    "composite": true,
+    "sourceMap": false,
+    "declaration": true,
+    "declarationMap": true,
+    "declarationDir": "./dist",
+    "target": "esnext",
+    "esModuleInterop": true,
+    "baseUrl": "./"
+  },
+  "ts-node": {
+    "compilerOptions": {
+      "module": "CommonJS"
+    }
+  },
+  "compileOnSave": true,
+  "include": ["src/**/*", "tests/**/*"]
+}

@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "module": "CommonJS",
+    "moduleResolution": "node",
+    "incremental": true,
+    "noImplicitReturns": true,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "outDir": "lib",
+    "strict": true,
+    "declaration": true,
+    "sourceMap": false,
+    "target": "esnext",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+  },
+  "ts-node": {
+    "compilerOptions": {
+      "module": "CommonJS"
+    }
+  },
+  "references": [
+    {
+      "path": "./projects/common"
+    },
+    {
+      "path": "./projects/core"
+    }
+  ]
+}

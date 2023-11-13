@@ -1,0 +1,16 @@
+{
+  "name": "core",
+  "engines": {
+    "node": "18"
+  },
+  "main": "lib/src/index.js",
+  "private": true,
+  "version": "0.0.1",
+  "scripts": {
+    "build": "tsc --build --verbose",
+    "start": "node lib/src/index.js"
+  },
+  "dependencies": {
+    "@myproj/common": "file:../common"
+  }
+}

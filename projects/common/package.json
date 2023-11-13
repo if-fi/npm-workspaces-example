@@ -1,0 +1,38 @@
+{
+  "name": "@myproj/common",
+  "engines": {
+    "node": "18"
+  },
+  "private": true,
+  "version": "0.1.1",
+  "main": "lib/src/index.js",
+  "types": "dist/src/index.d.ts",
+  "typings": "dist/src/index.d.ts",
+  "exports": {
+    "./*": "./lib/src/*.js",
+    "./tests/*": "./lib/tests/*.js"
+  },
+  "typesVersions": {
+    "*": {
+      "*": [
+        "dist/src/*"
+      ],
+      "tests/*": [
+        "dist/tests/*"
+      ]
+    }
+  },
+  "files": [
+    "lib",
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc --build --verbose",
+    "gcp-build": "",
+    "build:watch": "tsc --watch"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+  }
+}
