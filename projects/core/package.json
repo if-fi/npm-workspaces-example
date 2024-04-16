@@ -11,6 +11,6 @@
     "start": "node lib/src/index.js"
   },
   "dependencies": {
-    "@myproj/common": "file:../common"
+    "@myproj/common": "^0.1.1"
   }
 }

@@ -13,7 +13,14 @@
     "declaration": true,
     "declarationMap": true,
     "target": "esnext",
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "baseUrl": "./",
+    "paths": {
+      "@myproj/common/*": [
+        "../common/src/*"
+      ]
+}
+
   },
   "ts-node": {
     "compilerOptions": {
